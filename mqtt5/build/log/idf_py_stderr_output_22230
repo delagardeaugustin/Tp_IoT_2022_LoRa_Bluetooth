@@ -1,0 +1,41 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c484: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c481: memset in ROM
+0x400d8f87: update_token at /home/augustin/esp/Tp_IoT_2022_LoRa_Bluetooth/mqtt5/main/app_main.c:31
+0x400d9062: mqtt_event_handler at /home/augustin/esp/Tp_IoT_2022_LoRa_Bluetooth/mqtt5/main/app_main.c:63
+0x4016f741: handler_execute at /home/augustin/esp/esp-idf/components/esp_event/esp_event.c:135
+0x4016f1df: esp_event_loop_run at /home/augustin/esp/esp-idf/components/esp_event/esp_event.c:584
+0x400d9906: esp_mqtt_dispatch_event at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1041
+0x400da0a3: deliver_publish at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1108
+0x400da21f: mqtt_process_receive at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1386
+0x400da748: esp_mqtt_task at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1653
+0x4008aff1: vPortTaskWrapper at /home/augustin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c484: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c481: memset in ROM
+0x400d8f87: update_token at /home/augustin/esp/Tp_IoT_2022_LoRa_Bluetooth/mqtt5/main/app_main.c:31
+0x400d9062: mqtt_event_handler at /home/augustin/esp/Tp_IoT_2022_LoRa_Bluetooth/mqtt5/main/app_main.c:63
+0x4016f741: handler_execute at /home/augustin/esp/esp-idf/components/esp_event/esp_event.c:135
+0x4016f1df: esp_event_loop_run at /home/augustin/esp/esp-idf/components/esp_event/esp_event.c:584
+0x400d9906: esp_mqtt_dispatch_event at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1041
+0x400da0a3: deliver_publish at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1108
+0x400da21f: mqtt_process_receive at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1386
+0x400da748: esp_mqtt_task at /home/augustin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1653
+0x4008aff1: vPortTaskWrapper at /home/augustin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

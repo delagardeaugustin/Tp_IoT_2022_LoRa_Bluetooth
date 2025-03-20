@@ -1,44 +1,31 @@
 # Tp_IoT_2022_LoRa_Bluetooth
+## BAHAIN Alexandre & DELAGARDE Augustin
 
-Ce TP est à réaliser à deux groupes.
-
-Groupe : Alexandre BAHAIN et Augustin DELAGARDE
-
-
-## 1. Mise en place
-
-### 1. Installer l'IDE VScode et les dépendances nécessaires
-
-cf. [https://docs.espressif.com/projects/esp-idf/en/v5.4/esp32/get-started/index.html](https://docs.espressif.com/projects/esp-idf/en/v5.4/esp32/get-started/index.html)
-
-Documentation de la board: [http://www.smartcomputerlab.org/](http://www.smartcomputerlab.org/)
-
-### 2. Se connecter sur un point d'accès Wifi
-
-### 3. Envoyer un message mqtt sur le broker test.mosquitto.org au topic tp/alban
-
-## 2. LoRa
-
-### 1. Définir des valeurs communes (à faire au tableau)
-
-### 2. Communiquer via mqtt des données
-
-Groupe 1: Envoyer un message mqtt donnant les valeurs nécessaires à une reception via LoRa.
-
-Groupe 2. Ecouter les messages mqtt en en déduire les valeurs pour un envoi de données via Lora.
-
-### 3. Communiquer via LoRa des données
-
-Groupe 1: Écouter les messages LoRa et les afficher.
-
-Groupe 2. Envoyer un message LoRa contenant des données (potentiellement en utilisant un caoteur.
-
-## 3. Inversion
-
-Après avoir réussi une communication, la carte du groupe 1 et celle du groupe 2 inversent leurs rôles.
-
-## 4. Bluetooth (ou BLE)
-
-À la place de communiquer les valeurs venant d'un capteur, continuer la discussion pour ouvrir un canal Bluetooth.
+### Connection en WiFi
+Il a fallu modifier le fichier sdkconfig pour paramétrer le WiFi car sur Windows l'éditeur graphique ne fonctionne pas. 
 
 
+
+### Envoi d'un message MQTT
+Il faut s'inscrire à un topic et envoyer le message de son choix. Dans notre cas le topic est tp/alban.
+MQTT est utile quand on veut envoyer des petits montants de données, comme par exemple les données d'un capteur de températeur.
+
+
+
+### LoRa
+Pour communiquer en LoRa, il faut paramétrer 6 pins : 
+SCK, MISO, MOSI, NSS, NRESET, DIO0
+Il faut aussi choisir un Spreading Factor, une bande passante, une fréquence, un coding rate.
+
+
+
+### Réalisation éffectués
+
+
+On écoute sur le topic venans du groupe de dorian "SALAD"
+
+on a récupéré le message "POTATO", qu'on garde dans une variable token.
+
+On envoie par intervalle de 5 seconde en laura, les 8 chracteres de la variable token.
+
+Dorian a pu observé le message en lora

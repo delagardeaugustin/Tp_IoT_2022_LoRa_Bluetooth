@@ -1,0 +1,154 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2025 09:52:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=207dch (133084) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=00030804 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00030828 vaddr=3ffb0000 size=0409ch ( 16540) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=000348cc vaddr=40080000 size=0b74ch ( 46924) load[0m
+[0;32mI (164) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a2484h (664708) map[0m
+[0;32mI (392) esp_image: segment 5: paddr=000e24ac vaddr=4008b74c size=0d7e0h ( 55264) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (425) boot: Disabling RNG early entropy source...[0m
+[0;32mI (436) cpu_start: Multicore app[0m
+[0;32mI (444) cpu_start: Pro cpu start user code[0m
+[0;32mI (444) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (444) app_init: Application information:[0m
+[0;32mI (444) app_init: Project name:     mqtt5[0m
+[0;32mI (448) app_init: App version:      cd1a27b-dirty[0m
+[0;32mI (453) app_init: Compile time:     Mar 20 2025 09:51:49[0m
+[0;32mI (458) app_init: ELF file SHA256:  447ac6a2f...[0m
+[0;32mI (462) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (466) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (484) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB8940 len 000276C0 (157 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 40098F2C len 000070D4 (28 KiB): IRAM[0m
+[0;32mI (512) spi_flash: detected chip: winbond[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (517) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+[0;32mI (540) MQTT_LoRa_Token: Demarrage de l'application...[0m
+[0;32mI (540) MQTT_LoRa_Token: IDF Version: v5.4[0m
+[0;32mI (580) example_connect: Start example_connect.[0m
+[0;32mI (590) wifi:wifi driver task: 3ffc05ec, prio:23, stack:6656, core=0[0m
+[0;32mI (600) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (600) wifi:wifi certification version: v7.0[0m
+[0;32mI (610) wifi:config NVS flash: enabled[0m
+[0;32mI (610) wifi:config nano formatting: disabled[0m
+[0;32mI (610) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (610) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (620) wifi:Init management short buffer num: 32[0m
+[0;32mI (620) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (630) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (630) wifi:Init static rx buffer num: 10[0m
+[0;32mI (630) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (640) wifi_init: rx ba win: 6[0m
+[0;32mI (640) wifi_init: accept mbox: 6[0m
+[0;32mI (640) wifi_init: tcpip mbox: 32[0m
+[0;32mI (650) wifi_init: udp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp tx win: 5760[0m
+[0;32mI (660) wifi_init: tcp rx win: 5760[0m
+[0;32mI (660) wifi_init: tcp mss: 1440[0m
+[0;32mI (660) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (670) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (670) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (750) wifi:mode : sta (3c:71:bf:fc:97:90)[0m
+[0;32mI (750) wifi:enable tsf[0m
+[0;32mI (750) example_connect: Connecting to SFR_2CGUS...[0m
+[0;33mW (750) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (760) example_connect: Waiting for IP(s)[0m
+[0;32mI (3420) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3420) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3430) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (3430) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3430) example_connect: Wi-Fi disconnected 202, trying to reconnect...[0m
+[0;32mI (5860) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (8270) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8270) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8280) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8310) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8340) wifi:connected with SFR_2CGUS, aid = 8, channel 1, BW20, bssid = e2:52:f9:12:e5:73[0m
+[0;32mI (8340) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (8340) wifi:pm start, type: 1[0m
+
+[0;32mI (8350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8350) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8360) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (8380) wifi:<ba-add>idx:0 (ifx:0, e2:52:f9:12:e5:73), tid:0, ssn:0, winSize:64[0m
+[0;32mI (9400) esp_netif_handlers: example_netif_sta ip: 192.168.82.143, mask: 255.255.255.0, gw: 192.168.82.128[0m
+[0;32mI (9400) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.82.143[0m
+[0;32mI (9580) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:3e71:bfff:fefc:9790, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9580) example_common: Connected to example_netif_sta[0m
+[0;32mI (9590) example_common: - IPv4 address: 192.168.82.143,[0m
+[0;32mI (9590) example_common: - IPv6 address: fe80:0000:0000:0000:3e71:bfff:fefc:9790, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9600) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9610) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9630) MQTT_LoRa_Token: Autre evenement recu: 7[0m
+[0;32mI (9630) task_tx: Start[0m
+[0;33mW (9630) task_tx: Token non initialise, attente de reception...[0m
+[0;32mI (9630) main_task: Returned from app_main()[0m
+[0;32mI (9740) MQTT_LoRa_Token: Connecte au broker MQTT[0m
+[0;32mI (9750) MQTT_LoRa_Token: Abonnement a SALAD envoye, msg_id=62928[0m
+[0;32mI (9800) mqtt5_client: MQTT_MSG_TYPE_SUBACK return code is 1[0m
+[0;32mI (9800) MQTT_LoRa_Token: Autre evenement recu: 3[0m
+[0;33mW (14630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (19630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (24630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (29630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (34630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (39630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (44630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (49630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (54630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (59630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (64630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (69630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (74630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (79630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (84630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (89630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (94630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (99630) task_tx: Token non initialise, attente de reception...[0m
+[0;33mW (104630) task_tx: Token non initialise, attente de reception...[0m
+[0;32mI (107480) MQTT_LoRa_Token: Nouveau message MQTT recu[0m
+[0;32mI (107480) MQTT_LoRa_Token: Topic: SALAD[0m
+[0;32mI (107480) MQTT_LoRa_Token: Nouveau token recu: POTATOTO[0m
+[0;32mI (109670) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (114710) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (119750) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (124790) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (129830) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (134870) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (139910) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (144950) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (149990) task_tx: Token envoye en LoRa: POTATOTO[0m
+[0;32mI (155030) task_tx: Token envoye en LoRa: POTATOTO[0m
