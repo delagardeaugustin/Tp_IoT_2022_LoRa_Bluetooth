@@ -2,6 +2,9 @@
 
 Ce TP est à réaliser à deux groupes.
 
+Groupe : Alexandre BAHAIN et Augustin DELAGARDE
+
+
 ## 1. Mise en place
 
 ### 1. Installer l'IDE VScode et les dépendances nécessaires
